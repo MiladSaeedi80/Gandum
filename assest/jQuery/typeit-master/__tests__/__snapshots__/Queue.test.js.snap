@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should only return non-executed items. 1`] = `
+Array [
+  Array [
+    "value2",
+    null,
+    Object {
+      "executed": false,
+      "id": 1,
+    },
+  ],
+  Array [
+    "value3",
+    null,
+    Object {
+      "id": 2,
+    },
+  ],
+]
+`;
+
+exports[`It should reset properly by marking each item as having not yet been executed. 1`] = `
+Array [
+  Array [
+    "first-action",
+    null,
+    Object {
+      "executed": false,
+      "id": 0,
+    },
+  ],
+  Array [
+    "value1",
+    null,
+    Object {
+      "executed": false,
+      "id": 1,
+    },
+  ],
+  Array [
+    "value2",
+    null,
+    Object {
+      "executed": false,
+      "id": 2,
+    },
+  ],
+  Array [
+    "value3",
+    null,
+    Object {
+      "executed": false,
+      "id": 3,
+    },
+  ],
+  Array [
+    "value4",
+    null,
+    Object {
+      "executed": false,
+      "id": 4,
+    },
+  ],
+  Array [
+    "value5",
+    null,
+    Object {
+      "executed": false,
+      "id": 5,
+    },
+  ],
+]
+`;
+
+exports[`It should set initial steps properly. 1`] = `
+Array [
+  Array [
+    "value1",
+    null,
+    Object {
+      "id": 0,
+    },
+  ],
+  Array [
+    "value2",
+    null,
+    Object {
+      "id": 1,
+    },
+  ],
+  Array [
+    "value3",
+    null,
+    Object {
+      "id": 2,
+    },
+  ],
+]
+`;
+
+exports[`add() It should add a step passed as a function. 1`] = `
+Array [
+  Array [
+    "first-action",
+    null,
+    Object {
+      "id": 0,
+    },
+  ],
+  Array [
+    [Function],
+    null,
+    Object {
+      "id": 1,
+    },
+  ],
+  Array [
+    [Function],
+    null,
+    Object {
+      "id": 2,
+    },
+  ],
+  Array [
+    [Function],
+    null,
+    Object {
+      "id": 3,
+    },
+  ],
+]
+`;
+
+exports[`add() It should add multiple steps passed at once. 1`] = `
+Array [
+  Array [
+    "first-action",
+    null,
+    Object {
+      "id": 0,
+    },
+  ],
+  Array [
+    [Function],
+    1,
+    Object {
+      "id": 1,
+    },
+  ],
+  Array [
+    [Function],
+    2,
+    Object {
+      "id": 2,
+    },
+  ],
+  Array [
+    [Function],
+    3,
+    Object {
+      "id": 3,
+    },
+  ],
+]
+`;
+
+exports[`add() It should add steps properly. 1`] = `
+Array [
+  Array [
+    "first-action",
+    null,
+    Object {
+      "id": 0,
+    },
+  ],
+  Array [
+    "step1",
+    null,
+    Object {
+      "id": 1,
+    },
+  ],
+  Array [
+    "step2",
+    null,
+    Object {
+      "id": 2,
+    },
+  ],
+]
+`;
